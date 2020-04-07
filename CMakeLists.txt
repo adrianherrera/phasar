@@ -5,10 +5,8 @@ if (DEFINED LLVM_MAIN_SRC_DIR)
   set(PHASAR_IN_TREE 1)
 endif()
 
-if (NOT PHASAR_IN_TREE)
-  project (phasar)
-  set(CMAKE_PROJECT_NAME "phasar")
-endif ()
+project (phasar C CXX)
+set(CMAKE_PROJECT_NAME "phasar")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS YES)
 set(CMAKE_CXX_STANDARD 17)
